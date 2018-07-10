@@ -26,7 +26,6 @@ import Control.Monad.Trans.Free
 import Control.Monad.Trans.Class
 import Data.Aeson
 import Data.ByteString.Lazy (ByteString)
-import Data.Monoid
 import Data.Text (Text)
 import Data.Time.Clock
 import Network.API.Builder hiding (runRoute)

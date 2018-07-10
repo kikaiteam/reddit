@@ -1,4 +1,7 @@
-resolver: lts-11.8
-
-extra-deps:
-  - api-builder-0.15.0.0
+resolver: lts-12.0
+packages:
+- .
+- location:
+    git: git@github.com:kikaiteam/api-builder.git
+    commit: f40450d24a9b5e05e024512f58b9f48538580afe
+  extra-dep: true
