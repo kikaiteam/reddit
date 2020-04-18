@@ -82,7 +82,7 @@ lookupUserFlair r u = do
 
 -- | Set a user's flair on the specified subreddit. Requires moderator
 --   privileges on the specified subreddit.
-setUserFlair :: Monad m => SubredditName -> Username -> Text -> Text -> RedditT m ()
+setUserFlair :: MonadFail m => SubredditName -> Username -> Text -> Text -> RedditT m ()
 setUserFlair r u txt cls =
   if Text.length txt > 64
     then failWith $ APIError FlairTooLong

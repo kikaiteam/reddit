@@ -1,5 +1,5 @@
-resolver: lts-14.21
+resolver: lts-15.8
 
 extra-deps:
-  - github: intolerable/api-builder
-    commit: v0.17.0.0
+  - github: kikaitech/api-builder
+    commit: 4c6cca2ec28aa6eee18c317695eb74e43c56ac76

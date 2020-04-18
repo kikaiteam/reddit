@@ -1,3 +1,5 @@
+{-# LANGUAGE StandaloneDeriving #-}
+
 module Reddit.Types.Reddit
   ( Reddit
   , RedditT(..)
@@ -63,6 +65,8 @@ instance Functor (RedditF m) where
 
 newtype RedditT m a = RedditT (FreeT (RedditF m) m a)
   deriving (Functor, Applicative, Monad)
+
+deriving instance MonadFail m => MonadFail (RedditT m)
 
 instance MonadTrans RedditT where
   lift = RedditT . lift
