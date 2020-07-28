@@ -1,5 +1,5 @@
-resolver: lts-15.11
+resolver: lts-16.7
 
 extra-deps:
   - github: kikaitech/api-builder
-    commit: ad4f990c3258f6b297459e176649a94a73e9005c
+    commit: 04e7000ac8552ac7c4b42d4b741bf9240772409d
